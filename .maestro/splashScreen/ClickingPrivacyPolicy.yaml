@@ -1,0 +1,12 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "signup-button"
+- assertVisible: "Privacy Policy"
+- tapOn: "Privacy Policy"
+- assertVisible: "Privacy Policy"
+- "scroll"
+- tapOn: "Done"
+- assertVisible:
+    id: "signup-button"

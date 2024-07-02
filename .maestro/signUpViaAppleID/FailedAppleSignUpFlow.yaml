@@ -1,0 +1,10 @@
+appId: comm.mybeaconapp
+---
+
+# - assertVisible: "Apple ID"
+- assertVisible:
+    id: "SIWA_CONTINUE_BUTTON"
+- assertVisible: "Cancel"
+- tapOn: "Cancel"
+- assertVisible: "Sign in with Apple failed"
+

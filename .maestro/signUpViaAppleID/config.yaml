@@ -1,0 +1,4 @@
+executionOrder:
+  flowsOrder:
+  - "StartAppleSignUpFlow"
+  - "FailedAppleSignUpFlow"

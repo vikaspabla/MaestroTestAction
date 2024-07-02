@@ -1,0 +1,25 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "signup-button"
+- tapOn:
+    id: "signup-button"
+- assertVisible: "Let’s start with your email you@email.com"
+- inputText: "pabla@.com"
+- assertVisible:
+    id: "icon-button"
+    index: 1
+- tapOn:
+    id: "icon-button"
+    index: 1
+    
+#User stays on the same poage as email is not valid
+- assertVisible: "Let’s start with your email"
+
+- assertVisible:
+    id: "icon-button"
+    index: 0
+- tapOn:
+    id: "icon-button"
+    index: 0

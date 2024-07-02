@@ -1,0 +1,17 @@
+appId: comm.mybeaconapp
+---
+
+- launchApp
+
+- assertVisible:
+    id: "signup-button"
+- assertVisible: "Plan Before You Leap"
+- tapOn:
+    point: "50%,31%"
+- assertVisible: "Arrive Empowered"
+- tapOn:
+    point: "50%,31%"
+- assertVisible: "Your Next Steps"
+- tapOn:
+    point: "50%,31%"
+- assertVisible: "Plan Before You Leap"

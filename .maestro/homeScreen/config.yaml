@@ -1,0 +1,10 @@
+executionOrder:
+  flowsOrder:
+  - ClickingApplyForEarlyAccessButton
+  - ClickingLearnMoreAboutBeaconMoney
+  - ClickOnSafeTravelPlans
+  - ClickOnLearningHub
+  - ClickOnPlanningList
+  - ClickOnNewPlanningListButton
+  - ClickToViewBeaconMoneyPage
+  - ClickToViewFeaturedArticle

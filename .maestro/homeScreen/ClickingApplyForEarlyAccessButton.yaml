@@ -1,0 +1,40 @@
+appId: comm.mybeaconapp
+---
+- launchApp
+- assertVisible: "Beacon"
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+- tapOn:
+    point: "52%,10%"
+
+
+- runFlow : 
+    when :
+      visible: "Apply for early access"
+    commands :
+      - tapOn:
+          id: "coming-soon-button"
+      - assertVisible: "COMING SOON YOU'RE ON THE WAITLIST Earn perks & rewards by inviting\
+        \ friends with your link. Learn more about Beacon Money"
+      - tapOn:
+          id: "refer-url-button"
+      - assertVisible: "Home"
+      - assertVisible: "Close"
+      - tapOn: "Close"
+     
+
+
+- runFlow: 
+    when: 
+      visible: 
+        id: "refer-url-button"
+    commands:    
+       - tapOn:
+          id: "refer-url-button"
+       - assertVisible: "Home"
+       - assertVisible: "Close"
+       - tapOn: "Close"
+             
+
+
+

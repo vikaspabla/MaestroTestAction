@@ -1,0 +1,25 @@
+appId: comm.mybeaconapp
+---
+
+# - assertVisible:
+#     id: "signup-button"
+# - tapOn:
+#     id: "signup-button"
+# - assertVisible: "Let’s start with your email you@email.com"
+# - inputText: "pabla@gmail.com"
+# - assertVisible:
+#     id: "icon-button"
+#     index: 1
+# - tapOn:
+#     id: "icon-button"
+#     index: 1
+- assertVisible: "To continue, enter the code we sent to"
+- assertVisible:
+    id: "send-new-otp-button"
+- assertVisible:
+    id: "send-new-otp-button"
+- assertVisible:
+    id: "open-email-app-button"
+- tapOn:
+    id: "open-email-app-button"
+- assertVisible: "EmailException: No email apps available"

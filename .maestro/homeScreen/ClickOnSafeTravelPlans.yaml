@@ -1,0 +1,123 @@
+appId: comm.mybeaconapp
+---
+
+# Make sure user is on home screen 
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+
+
+- assertVisible: "Start Travel Plans"
+- tapOn: "HERE START Start Travel Plans"
+
+
+# Q-1
+
+# - tapOn:
+#     id: "home-screen-travel-plan-card-wrapper"
+- assertVisible: "Are you already in Canada?"
+- tapOn:
+    id: "questionnaire-single-select-button"
+    index: 1
+- assertVisible: "What is or was your arrival date?"
+- tapOn:
+    id: "date-button"
+- tapOn: "Next Month"
+- tapOn: "1"
+- tapOn: "Confirm"
+- tapOn:
+    id: "continue-button"
+
+
+# Q-2
+- assertVisible:
+    id: "citizenship-question-text"
+- assertVisible: "\U0001f1ee\U0001f1f3 India"
+- assertVisible: "\U0001f1e8\U0001f1f3 China"
+- assertVisible: "\U0001f1f5\U0001f1ed Phillipines"
+- assertVisible: "Other"
+- tapOn:
+    id: "questionnaire-single-select-button"
+    index: 0
+- tapOn:
+    id: "continue-button"
+
+
+# Q-3
+- assertVisible:
+    id: "status-while-traveling-to-canada-question-text"
+- assertVisible: "Work Permit"
+- assertVisible: "PR"
+- assertVisible: "Refugee"
+- assertVisible: "Student"
+- assertVisible: "Other"
+- tapOn: "Student"
+- tapOn:
+    id: "continue-button"
+
+
+# Q-4
+- assertVisible: "Do you know the Canadian province you would be arriving in?"
+- tapOn:
+    id: "arriving-province-question-text"
+- tapOn: "Alberta"
+- assertVisible: "Do you know the city you plan to live in upon arrival in Alberta?"
+- tapOn: "Calgary"
+- scroll
+- tapOn:
+    id: "continue-button"
+
+
+# Q-5
+- assertVisible:
+    id: "who-is-traveling-question-text"
+- assertVisible: "Me"
+- assertVisible: "My Spouse / Partner"
+- assertVisible: "My Children"
+- tapOn: "Me"
+- tapOn:
+    id: "continue-button"
+
+- extendedWaitUntil:
+    visible: "Recommendations"
+    timeout: 50000
+
+- assertVisible: "Skip"
+- assertVisible:
+    id: "subscribe-suggested-list-button"
+
+
+
+
+# Suggested lists
+
+- assertVisible:
+    id: "suggested-planning-card"
+    index: 0
+- tapOn:
+    id: "suggested-planning-card"
+    index: 0
+# Click on subscribe button
+- tapOn:
+    id: "subscribe-suggested-list-button"
+
+# NOTE: After user click on subscribe button, 
+# User will land to home screen with bottom sheet animation
+# This condition is to close bottom sheet
+- runFlow:
+    when:
+      visible: "Your Planning Lists"
+    commands:
+    # Click on top area of screen
+    - tapOn:
+        point: "49%,12%"
+
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+- tapOn:
+    id: "home-screen-user-profile-icon"
+- assertVisible:
+    id: "travel-plan"
+- assertVisible:
+    id: "back-button"
+- tapOn:
+    id: "back-button"

@@ -1,0 +1,76 @@
+appId: comm.mybeaconapp
+---
+# - launchApp # launches the app
+# # - clearKeychain # clears the keychain of our app
+# - assertVisible: "Plan Before You Leap"
+
+# - tapOn:
+#     id: "signup-button"
+# - assertVisible: "Let’s start with your email you@email.com"
+# - assertVisible:
+#     id: "continue-with-google-button"
+# - tapOn:
+#     id: "continue-with-google-button"
+# - tapOn: "Continue"
+# # - runFlow: # this checks if the test user is already logged on or not
+# #     when: 
+# #       notVisible: "testuser08588@gmail.com"
+# #     commands:   
+# #         - runFlow: #if the test user is not logged in then we can add the test user 
+# #             when:
+# #               visible: "Use another account"
+# #             commands:
+# #                 - tapOn: "Use another account"
+# #                 - assertVisible: "Sign in"
+# #                 - tapOn: "Email or phone"
+# #                 - inputText: "testuser08588@gmail.com"
+# #                 - tapOn: "Sign in"
+# #                 - tapOn: "Next"
+# #                 - tapOn: "Enter your password"
+# #                 - inputText: "Test@123"
+# #                 - tapOn: "Welcome"
+# #                 - tapOn: "Next"
+# #                 - tapOn:
+# #                     point: "50%,88%" #Not now button doesn't have an id to it
+
+
+# - runFlow : #if there are no existing users then we can enter test credentials
+#     when :
+#       visible: "Sign in"
+#     commands :
+#       - tapOn: "Email or phone"
+#       - inputText: "testuser08588@gmail.com"
+#       - tapOn: "Sign in"
+#       - tapOn: "Next"
+#       - extendedWaitUntil:
+#           visible: "Enter your password"
+#           timeout: 30000
+#       - tapOn: "Enter your password"
+#       - inputText: "Test@123"
+#       - tapOn: "Welcome"
+#       - tapOn: "Next"
+
+
+# - runFlow: # if there already is a test user then login as a test user 
+#     when:
+#       visible: "testuser08588@gmail.com"
+#     commands:
+#         - tapOn: "testuser08588@gmail.com"
+
+
+
+- extendedWaitUntil:
+    visible: "Latest & Greatest"
+    timeout: 50000
+
+- assertVisible:
+    id: "button-test"
+- assertVisible:
+    id: "not-now-text"
+# - tapOn:
+#     id: "button-test"
+# - assertVisible: "\U000f11e6 Push notifications enabled"
+
+
+
+

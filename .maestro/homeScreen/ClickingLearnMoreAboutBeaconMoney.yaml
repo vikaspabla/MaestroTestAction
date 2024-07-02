@@ -1,0 +1,22 @@
+appId: comm.mybeaconapp
+---
+
+- tapOn:
+    point: "52%,10%"
+- tapOn:
+    point: "52%,10%"
+- assertVisible: "COMING SOON YOU'RE ON THE WAITLIST Earn perks & rewards by inviting\
+    \ friends with your link. Learn more about Beacon Money"
+    
+- assertVisible:
+    id: "refer-url-button"
+- assertVisible: "Tap to share"
+- tapOn:
+    point: "52%,44%"
+- extendedWaitUntil:
+    visible: "Beacon Money Account" # or any other selector
+    timeout: 50000      # Timeout in milliseconds
+
+- tapOn: "Done"
+- tapOn:
+    point: "52%,10%"

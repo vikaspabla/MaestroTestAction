@@ -1,0 +1,14 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "template-header"
+- assertVisible:
+    id: "use-this-planning-list-button"
+
+- tapOn:
+    id: "use-this-planning-list-button"
+- assertVisible:
+    id: "planning-list-header"
+- assertVisible:
+    id: "planning-list-option-button"

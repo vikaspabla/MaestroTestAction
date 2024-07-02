@@ -1,0 +1,86 @@
+flows:
+  - "splashScreen/*"
+  - "signUpViaEmail/*"
+  - "signUpViaAppleID/*"
+  - "signUpViaGoogle/*"
+  - "notifications/*"
+  - "homeScreen/*"
+  - "planningLists/*"
+  - "article/*"
+  - "userProfile/*"
+  
+
+executionOrder:
+    # continueOnFailure: false # default is true
+    flowsOrder:
+        #Splash Screen
+        - ChangingSplashScreen
+        - ClickingPrivacyPolicy
+        - ClickingTermsOfUse
+        - ClickingStartNowButton
+
+        #Sign Up Via Email
+        - InvalidEmailSignup
+        - ValidEmailSignup
+        - ValidEmailSplashScreen
+        - EmailProviderSuggestion
+        - ValidEmailOTP
+        - OpenEmailApp
+        - ResendEmailOTP
+
+        #Sign Up Via AppleID
+        - StartAppleSignUpFlow
+        - FailedAppleSignUpFlow
+
+        #Sign up Via Google
+        - StartGoogleSignUpFlow
+        - FailedGoogleSignUpFlow
+        - CompleteGoogleSignUpFlow
+
+        #Notifications
+        - NotificationPopUpAfterLogin
+
+        #Home Screen
+        - ClickingApplyForEarlyAccessButton
+        - ClickingLearnMoreAboutBeaconMoney
+        - ClickOnSafeTravelPlans
+        - ClickOnLearningHub
+        - ClickOnPlanningList
+        - ClickOnNewPlanningListButton
+        - ClickToViewBeaconMoneyPage
+        - ClickToViewFeaturedArticle
+
+        #Planning Lists
+        - ExplorePlanningLists
+        - TemplatePreviewScreen
+        - UseTemplate
+        - AddCustomTask
+        - EditCustomTask
+        - CannotEditTemplateTask
+        - CreatePLanningListWithoutTitleDescription
+        - CreateTaskWithoutTitleDescription
+        - CheckDoneTask
+        - SwipeDoneTask
+        - DeleteAndUndoTask
+        - CompleteTasks
+        - DeletePlanningList
+         
+  
+
+        #Article
+        - BookmarkArticle
+        - ShareArticle
+        - UnbookmarkArticle
+        
+
+        #User Profile
+        - ViewUserNameEmail
+        - EditName
+        - EditProfilePicture
+        - PushNotifications
+        - ContactSupport
+        - CheckTerms&Conditions
+        - CheckPrivacyPolicy
+        - CheckCloseAccount
+        - CheckAppVersion
+        - LogOut

@@ -1,0 +1,17 @@
+appId: comm.mybeaconapp
+---
+
+# - assertVisible:
+#     id: "planning-list-title-text"
+
+# - tapOn:
+#     id: "user-planning-card"
+#     index: 0
+
+- tapOn:
+    id: "check-list-name-text"
+    index: 2
+
+- assertNotVisible:
+    id: "save-task-button"
+    

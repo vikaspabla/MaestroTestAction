@@ -1,0 +1,24 @@
+appId: comm.mybeaconapp
+---
+
+- launchApp
+- assertVisible:
+    id: "signup-button"
+- tapOn:
+    id: "signup-button"
+- assertVisible: "Let’s start with your email you@email.com"
+- assertVisible:
+    id: "continue-with-apple-button"
+- tapOn:
+    id: "continue-with-apple-button"
+# - assertVisible: "Sign in with your Apple\_ID"
+# - assertVisible: "Settings"
+# - tapOn: "Settings"
+# - assertVisible: "Apple\_ID"
+# - assertVisible: "Sign in Manually"
+# - tapOn: "Sign in Manually"
+# - assertVisible:
+#     id: "username-field"
+# - assertVisible: "Apple ID"
+- assertVisible:
+    id: "SIWA_CONTINUE_BUTTON"

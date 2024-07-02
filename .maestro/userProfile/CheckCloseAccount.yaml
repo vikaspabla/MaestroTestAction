@@ -1,0 +1,15 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible:
+    id: "close-account"
+- tapOn:
+    id: "close-account"
+- tapOn:
+    id: "close-account-button"
+- assertVisible: "Start"
+- tapOn: "Done"
+# Free click to close the bottom sheet
+- tapOn:
+    point: "50%,37%"

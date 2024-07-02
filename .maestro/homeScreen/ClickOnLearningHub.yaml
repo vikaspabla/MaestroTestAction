@@ -1,0 +1,14 @@
+appId: comm.mybeaconapp
+---
+# Make sure user is on home screen 
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+
+
+- assertVisible: "Learning Hub"
+- tapOn: "Learning Hub"
+- assertVisible: "Learning Hub"
+- tapOn:
+    id: "header-close-icon"
+- assertVisible:
+    id: "home-screen-user-profile-icon"

@@ -1,0 +1,6 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible:
+    id: "app-version"

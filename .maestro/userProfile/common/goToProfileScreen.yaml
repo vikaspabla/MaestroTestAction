@@ -1,0 +1,12 @@
+appId: comm.mybeaconapp
+---
+
+- runFlow:
+    when:
+      notVisible: "Settings"
+    commands:
+        - launchApp
+        - tapOn:
+            id: "home-screen-user-profile-icon"
+        - assertVisible: "Settings"
+  

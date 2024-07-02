@@ -1,0 +1,24 @@
+appId: comm.mybeaconapp
+---
+# Make sure user is on home screen 
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+
+- assertVisible: "New Planning List"
+- tapOn: "New Planning List"
+- tapOn: "Name of List"
+- inputText: "Test planning list"
+- tapOn: "Tap to add description"
+- inputText: "Some description"
+- tapOn: "Create"
+- tapOn:
+    id: "back-button"
+- tapOn: "Planning List"
+- assertVisible:
+    id: "user-planning-card"
+    index: 0
+- tapOn:
+    id: "close-button"
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+

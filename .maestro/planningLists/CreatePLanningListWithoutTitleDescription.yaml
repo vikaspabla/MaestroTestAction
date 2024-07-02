@@ -1,0 +1,32 @@
+appId: comm.mybeaconapp
+---
+
+- launchApp
+
+- assertVisible: "New Planning List"
+- tapOn: "New Planning List"
+
+- tapOn: Create
+
+# we are on created planning list
+- assertVisible: "New Planning List"
+- assertVisible:
+    id: "planning-list-option-button"
+
+- tapOn:
+    id: "planning-list-option-button"
+- assertVisible:
+    id: "edit-planning-button"
+- tapOn:
+    id: edit-planning-button
+- assertVisible:
+    id: "create-edit-planning-list-header-title"
+- inputText: " updated"
+- tapOn: "Tap to add description"
+- inputText: "updated"
+- assertVisible:
+    id: "create-edit-planning-list-header-right-button"
+- tapOn:
+    id: "create-edit-planning-list-header-right-button"
+- assertVisible:
+    id: "planning-header"

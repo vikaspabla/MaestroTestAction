@@ -1,0 +1,10 @@
+appId: comm.mybeaconapp
+jsEngine: graaljs
+---
+
+
+- runFlow:
+    when:
+      notVisible: "user-planning-card-empty-card"
+    commands:
+        - runScript: script.js

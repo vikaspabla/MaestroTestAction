@@ -1,0 +1,18 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "signup-button"
+- tapOn:
+    id: "signup-button"
+- assertVisible: "Let’s start with your email you@email.com"
+- assertVisible:
+    id: "continue-with-apple-button"
+- assertVisible:
+    id: "continue-with-google-button"
+- assertVisible:
+    id: "icon-button"
+- tapOn:
+    id: "icon-button"
+- assertVisible:
+    id: "signup-button"

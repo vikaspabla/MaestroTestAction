@@ -1,0 +1,32 @@
+appId: comm.mybeaconapp
+---
+
+# - launchApp
+
+# - assertVisible:
+#     id: "signup-button"
+# - tapOn:
+#     id: "signup-button"
+# - assertVisible: "Let’s start with your email you@email.com"
+# - inputText: "pabla@gmail.com"
+# - assertVisible:
+#     id: "icon-button"
+#     index: 1
+# - tapOn:
+#     id: "icon-button"
+#     index: 1
+- assertVisible: "To continue, enter the code we sent to"
+- assertVisible:
+    id: "send-new-otp-button"
+- assertVisible:
+    id: "icon-button"
+- tapOn:
+    id: "icon-button"
+- assertVisible:
+    id: "icon-button"
+    index: 0
+- tapOn:
+    id: "icon-button"
+    index: 0
+- assertVisible:
+    id: "signup-button"

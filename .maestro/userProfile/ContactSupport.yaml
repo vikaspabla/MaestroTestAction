@@ -1,0 +1,19 @@
+appId: comm.mybeaconapp
+---
+
+# - runFlow: "common/goToProfileScreen.yaml"
+
+- assertVisible:
+    id: "need-help"
+- tapOn:
+    id: "need-help"
+- assertVisible: "Messages"
+
+- tapOn: "Messages"
+
+- assertVisible:
+    id: "intercom close button"
+- tapOn:
+    id: "intercom close button"
+- assertVisible: "Settings"
+

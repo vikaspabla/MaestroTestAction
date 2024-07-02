@@ -1,0 +1,19 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "planning-header"
+
+# Create first task
+- tapOn:
+    id: "add-new-task-button"
+
+- tapOn:
+    id: "save-task-button"
+
+# Create second task
+- tapOn:
+    id: "add-new-task-button"
+
+- tapOn:
+    id: "save-task-button"

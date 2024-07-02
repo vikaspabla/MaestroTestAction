@@ -1,0 +1,22 @@
+appId: comm.mybeaconapp
+---
+- runFlow: "common/goToProfileScreen.yaml"
+
+- scroll
+- assertVisible:
+    id: "legal-documents"
+- tapOn:
+    id: "legal-documents"
+- assertVisible: "Legal"
+- assertVisible: "Privacy Policy"
+- assertVisible: "Terms & Conditions"
+- tapOn: "Terms & Conditions"
+- runFlow:
+    when:
+      visible: "Accept All"
+    commands:
+      - tapOn: "Accept All"
+    
+- assertVisible: "Terms of use"
+- "scroll"
+- tapOn: "Done"

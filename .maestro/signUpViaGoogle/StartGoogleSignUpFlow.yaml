@@ -1,0 +1,17 @@
+appId: comm.mybeaconapp
+---
+- launchApp
+- assertVisible:
+    id: "signup-button"
+- tapOn:
+    id: "signup-button"
+- assertVisible: "Let’s start with your email you@email.com"
+- assertVisible:
+    id: "continue-with-google-button"
+- tapOn:
+    id: "continue-with-google-button"
+- assertVisible: "“MyBeacon” Wants to Use “mybeacon.ca” to Sign In"
+- assertVisible: "Continue"
+- tapOn: "Continue"
+- assertVisible: "Sign in with Google"
+

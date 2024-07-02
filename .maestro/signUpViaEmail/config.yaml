@@ -1,0 +1,9 @@
+executionOrder:
+  flowsOrder:
+  - "InvalidEmailSignup"
+  - "ValidEmailSignup"
+  - "ValidEmailSplashScreen"
+  - "EmailProviderSuggestion"
+  - "ValidEmailOTP"
+  - "OpenEmailApp"
+  - "ResendEmailOTP"

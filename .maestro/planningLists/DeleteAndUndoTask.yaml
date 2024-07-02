@@ -1,0 +1,20 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "planning-header"
+    
+#Delete and Undo delete second task
+- swipe:
+    from:
+      id: "check-list-items-item"
+      index: 1
+    direction: "LEFT"
+- tapOn:
+    id: "delete-item"
+- tapOn:
+    id: "undo-pressable-text"
+- tapOn:
+    id: "check-list-items"
+    index: 1
+- assertVisible: "2 / 2"

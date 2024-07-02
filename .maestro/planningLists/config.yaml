@@ -1,0 +1,15 @@
+executionOrder:
+  flowsOrder:
+  - "ExplorePlanningLists"
+  - "TemplatePreviewScreen"
+  - "UseTemplate"
+  - "AddCustomTask"
+  - "EditCustomTask"
+  - "CannotEditTemplateTask"
+  - "CreatePLanningListWithoutTitleDescription"
+  - "CreateTaskWithoutTitleDescription"
+  - "CheckDoneTask"
+  - "SwipeDoneTask"
+  - "DeleteAndUndoTask"
+  - "CompleteTasks"
+  - "DeletePlanningList"

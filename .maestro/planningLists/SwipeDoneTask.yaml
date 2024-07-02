@@ -1,0 +1,16 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible:
+    id: "planning-header"
+    
+#Swipe check first task
+- swipe:
+    from:
+      id: "check-list-name-text"
+      index: 0
+    direction: "RIGHT"
+- tapOn:
+    id: "checked-item"
+- assertVisible: "1 / 2"

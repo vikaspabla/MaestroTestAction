@@ -1,0 +1,18 @@
+appId: comm.mybeaconapp
+---
+
+- tapOn: Learning Hub
+- assertVisible: "Learning Hub"
+- tapOn: "Saved"
+
+- assertVisible:
+    id: "article-bait"
+- tapOn:
+    id: "article-bait"
+- tapOn:
+    id: "article-share-button"
+- assertVisible:
+    id: "UIActivityContentView"
+- tapOn: "Close"
+
+

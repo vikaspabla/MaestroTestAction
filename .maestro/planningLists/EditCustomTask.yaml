@@ -1,0 +1,12 @@
+appId: comm.mybeaconapp
+---
+
+
+- tapOn:
+    id: check-list-name-text
+    index: 0
+- inputText: " Updated"
+- tapOn:
+    id: "save-task-button"
+- assertVisible: "Second task Updated "
+

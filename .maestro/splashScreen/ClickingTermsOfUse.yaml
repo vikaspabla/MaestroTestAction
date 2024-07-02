@@ -1,0 +1,12 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "signup-button"
+- assertVisible: "Terms of Use."
+- tapOn: "Terms of Use."
+- assertVisible: "Terms of Use"
+- "scroll"
+- tapOn: "Done"
+- assertVisible:
+    id: "signup-button"

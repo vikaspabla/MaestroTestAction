@@ -1,0 +1,18 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible: "Privacy Policy"
+- tapOn: "Privacy Policy"
+- runFlow:
+    when:
+      visible: "Accept All"
+    commands:
+      - tapOn: "Accept All"
+- assertVisible: "Privacy Policy"
+- "scroll"
+- tapOn: "Done"
+- assertVisible:
+    id: "back-button"
+- tapOn:
+    id: "back-button"

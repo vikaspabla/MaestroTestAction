@@ -1,0 +1,12 @@
+executionOrder:
+  flowsOrder:
+  - "ViewUserNameEmail"
+  - "EditName"
+  - "EditProfilePicture"
+  - "PushNotifications"
+  - "ContactSupport"
+  - "CheckTerms&Conditions"
+  - "CheckPrivacyPolicy"
+  - "CheckCloseAccount"
+  - "CheckAppVersion"
+  - "LogOut"

@@ -1,0 +1,15 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible:
+    id: "article-bookmark-button"
+- tapOn:
+    id: "article-bookmark-button"
+
+- assertVisible:
+    id: "back-button"
+- tapOn:
+    id: "back-button"
+- assertVisible:
+    id: "no-saved-article-box"

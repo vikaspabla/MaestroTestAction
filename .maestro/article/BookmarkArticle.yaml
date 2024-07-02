@@ -1,0 +1,22 @@
+appId: comm.mybeaconapp
+---
+- runFlow: "common/goToSmallArticle.yaml"
+
+
+- tapOn:
+    id: "small-article-card-list"
+- tapOn:
+    id: "article-bookmark-button"
+- tapOn:
+    id: "back-button"
+
+# hacky way
+- scrollUntilVisible:
+    element:
+      text: "Learning Hub"
+    speed: 20
+    timeout: 60000
+    direction: "UP"
+
+
+

@@ -1,0 +1,13 @@
+appId: comm.mybeaconapp
+---
+
+- "scroll"
+
+- tapOn:
+    id: "image-text-card"
+- "scroll"
+- "scroll"
+- tapOn:
+    id: "back-button"
+- assertVisible:
+    id: "home-screen-user-profile-icon"

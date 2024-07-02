@@ -1,0 +1,18 @@
+appId: comm.mybeaconapp
+---
+
+# Make sure user is on home screen 
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+
+- assertVisible:
+    id: "carousel-card-pressable"
+- tapOn:
+    id: "carousel-card-pressable"
+- assertVisible: "Beacon Money Account"
+- tapOn:
+    id: "back-button"
+
+- assertVisible:
+    id: "home-screen-user-profile-icon"
+

@@ -1,0 +1,8 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible:
+    id: "planning-header"
+
+- assertVisible: "Complete"

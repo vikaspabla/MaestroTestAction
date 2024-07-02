@@ -1,0 +1,14 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "planning-header"
+
+#Check mark first task
+- tapOn:
+    id: "check-list-items"
+    index: 0
+- assertVisible: "1 / 2"
+- tapOn:
+    id: "check-list-items"
+    index: 0

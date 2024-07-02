@@ -1,0 +1,19 @@
+appId: comm.mybeaconapp
+---
+
+
+- tapOn:
+    id: "add-new-task-button"
+- inputText: "First task"
+- tapOn: "Tap here to add a description"
+- inputText: "Task description"
+- tapOn:
+    id: "save-task-button"
+# Create second task
+- tapOn:
+    id: "add-new-task-button"
+- inputText: "Second task"
+- tapOn: "Tap here to add a description"
+- inputText: "Second Task description"
+- tapOn:
+    id: "save-task-button"

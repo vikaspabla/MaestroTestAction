@@ -1,0 +1,17 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible:
+    id: "popular-list-title-text"
+- assertVisible:
+    id: "task-card"
+    index: 0
+- tapOn:
+    id: "task-card"
+    index: 0
+- assertVisible:
+    id: "template-header"
+- assertVisible:
+    id: "use-this-planning-list-button"
+

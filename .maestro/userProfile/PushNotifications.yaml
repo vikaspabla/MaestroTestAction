@@ -1,0 +1,32 @@
+appId: comm.mybeaconapp
+---
+
+- runFlow:
+    when:
+      notVisible: "Settings"
+    commands:
+        - launchApp
+        - assertVisible:
+            id: "home-screen-user-profile-icon"
+        - tapOn:
+            id: "home-screen-user-profile-icon"
+        - assertVisible: "Settings"
+- assertVisible:
+    id: "notifications"
+- tapOn:
+    id: "notifications"
+- assertVisible: "Notifications"
+- assertVisible: "Marketing Notifications"
+
+- tapOn:
+    point: "89%,19%"
+- assertVisible: "Turn on Notifications"
+- assertVisible:
+    id: "button-test"
+- tapOn:
+    id: "button-test"
+- assertVisible: "Push notifications enabled"
+- assertVisible:
+    id: "back-button"
+- tapOn:
+    id: "back-button"

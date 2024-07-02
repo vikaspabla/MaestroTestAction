@@ -1,0 +1,27 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible:
+    id: "planning-header"
+
+- assertVisible:
+    id: "planning-list-option-button"
+- tapOn:
+    id: "planning-list-option-button"
+- assertVisible:
+    id: "delete-planning-button"
+- tapOn:
+    id: "delete-planning-button"
+- assertVisible:
+    id: "notification-bottom-sheet-content-title"
+- assertVisible:
+    id: "bottom-sheet-button"
+- tapOn:
+    id: "bottom-sheet-button"
+- assertVisible:
+    id: "close-button"
+- tapOn:
+    id: "close-button"
+# - assertVisible:
+#     id: "home-screen-user-profile-icon"
+

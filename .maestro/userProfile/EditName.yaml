@@ -1,0 +1,25 @@
+appId: comm.mybeaconapp
+env:
+  FULLNAME: Toji Fushiguro
+---
+
+- runFlow: "common/goToProfileScreen.yaml"
+# go to profile screen
+- tapOn:
+    id: "navigate-to-edit-profile"
+- tapOn:
+    id: "full-name-edit-field"
+- "eraseText"
+- assertNotVisible: ${FULLNAME}
+- inputText: ${FULLNAME}
+- tapOn:
+    id: "back-button"
+- assertVisible: ${FULLNAME}
+- tapOn:
+    id: "navigate-to-edit-profile"
+
+- copyTextFrom:
+    id: "full-name-edit-field"
+- evalScript: ${FULLNAME = maestro.copiedText}
+- tapOn:
+    id: "back-button"

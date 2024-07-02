@@ -1,0 +1,7 @@
+appId: comm.mybeaconapp
+---
+
+- assertVisible: "Sign in with Google"
+- assertVisible: "Cancel"
+- tapOn: "Cancel"
+- assertVisible: "Sign in with Google failed"

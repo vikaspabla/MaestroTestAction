@@ -1,0 +1,6 @@
+executionOrder:
+  flowsOrder:
+  - "ChangingSplashScreen"
+  - "ClickingPrivacyPolicy"
+  - "ClickingTermsOfUse"
+  - "ClickingStartNowButton"

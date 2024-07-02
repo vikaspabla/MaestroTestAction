@@ -1,0 +1,16 @@
+appId: comm.mybeaconapp
+---
+
+- runFlow:
+    when:
+      notVisible: 
+        id: "small-article-card-list"
+    commands:
+        - launchApp
+
+# - runFlow: "unlockApp.yaml"
+- scrollUntilVisible:
+    # centerElement: true
+    element:
+      id: "small-article-card-list"
+    timeout: 200000

@@ -1,0 +1,17 @@
+appId: comm.mybeaconapp
+---
+
+- runFlow: "common/goToProfileScreen.yaml"
+
+- tapOn:
+    id: "navigate-to-edit-profile"
+- tapOn:
+    point: "50%,23%"
+- tapOn:
+    id: "gallery-option"
+- tapOn: "Recents"
+- tapOn:
+    point: "62%,18%"
+- tapOn: "Choose"
+- tapOn:
+    id: "back-button"

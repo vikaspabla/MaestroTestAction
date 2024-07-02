@@ -1,0 +1,13 @@
+appId: comm.mybeaconapp
+---
+
+
+- assertVisible:
+    id: "logout-button"
+- tapOn:
+    id: "logout-button"
+- assertVisible: "Are you sure you want to logout?"
+- assertVisible: "Yes"
+# - tapOn: "Yes"
+# - assertVisible:
+#     id: "signup-button"
